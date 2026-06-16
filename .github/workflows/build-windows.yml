@@ -35,7 +35,7 @@ jobs:
           workspaces: './src-tauri -> target'
 
       - name: Build Tauri App (Windows .exe)
-        run: npx tauri build --bundles exe
+        run: npx tauri build --bundles nsis
 
       - name: Upload Windows Executable
         uses: actions/upload-artifact@v4
